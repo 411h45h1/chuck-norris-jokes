@@ -12,6 +12,13 @@
       // init
 
       // make initial query for joke
+      fetch("http://api.icndb.com/jokes/random")
+        .then((response) => {
+          return response.json();
+        })
+        .then((jsonResponse) => {
+          console.log(jsonResponse);
+        });
 
       // display joke
 
